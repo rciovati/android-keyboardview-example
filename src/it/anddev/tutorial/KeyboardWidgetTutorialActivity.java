@@ -32,14 +32,14 @@ public class KeyboardWidgetTutorialActivity extends Activity {
 
 	private CustomKeyboardView mKeyboardView;
 	private View mTargetView;
-	private final Keyboard mKeyboard = new Keyboard(this, R.xml.keyboard);
+	private Keyboard mKeyboard;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.main);
-
+		mKeyboard = new Keyboard(this, R.xml.keyboard);
 		mTargetView = (EditText) findViewById(R.id.target);
 		mTargetView.setOnTouchListener(new View.OnTouchListener() {
 
