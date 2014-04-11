@@ -48,8 +48,8 @@ public class CustomKeyboardView extends KeyboardView {
 				setVisibility(View.VISIBLE);
 			}
 		});
-		
-		setAnimation(animation);
+		startAnimation(animation);
+		//setAnimation(animation);
 	}
 
 }
